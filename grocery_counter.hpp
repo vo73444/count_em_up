@@ -1,3 +1,5 @@
+#include <iostream>
+
 class GroceryCounter{
 
     int ten;
@@ -24,7 +26,7 @@ class GroceryCounter{
 
     std::string total();
 
-    void numberOfOverflows();
+    int numberOfOverflows();
 
     void clear();
 
