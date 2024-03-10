@@ -75,4 +75,3 @@ int GroceryCounter::numberOfOverflows(){
 void GroceryCounter::clear(){
     ten = one = tenth = hundreth = overflows = 0;
 }
-// g++ grocery_counter.cpp test.cpp
