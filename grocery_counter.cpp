@@ -4,8 +4,19 @@
 
 using namespace std;
 
-GroceryCounter::GroceryCounter(){
-    ten = one = tenth = hundreth = 0;
+GroceryCounter::GroceryCounter(int starter){
+    if(starter > 9999 || starter < 0){
+        ten = one = tenth = hundreth = 0;
+    }
+    else{
+        hundreth = starter % 10;
+        starter /= 10;
+        tenth = starter % 10;
+        starter /= 10;
+        one = starter % 10;
+        starter /= 10;
+        ten = starter % 10;
+    }
 
     overflows = 0;
 }

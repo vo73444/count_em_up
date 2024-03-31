@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-    GroceryCounter counter;
+    GroceryCounter counter = GroceryCounter(1000);
 
     for(int i = 0; i < 9; i++){
         counter.tenths();

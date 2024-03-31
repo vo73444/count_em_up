@@ -14,7 +14,7 @@ class GroceryCounter{
 
     public:
 
-    GroceryCounter();
+    GroceryCounter(int starter = 0000);
 
     void tens();
 
