@@ -24,6 +24,14 @@ class GroceryCounter{
 
     void hundreths();
 
+    void decrement_tens();
+
+    void decrement_ones();
+
+    void decrement_tenths();
+
+    void decrement_hundreths();
+
     std::string total();
 
     int numberOfOverflows();

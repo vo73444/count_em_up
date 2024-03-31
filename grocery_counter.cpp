@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <array>
 #include "grocery_counter.hpp"
 
 using namespace std;
@@ -59,6 +60,46 @@ void GroceryCounter::hundreths(){
     else{
     hundreth += 1;
     }
+}
+
+void GroceryCounter::decrement_tens(){
+    if(ten == 0){
+        ten = 0;
+    }
+    else{
+    ten -= 1;
+    }
+
+}
+
+void GroceryCounter::decrement_ones(){
+    if(one == 0){
+        one = 0;
+    }
+    else{
+    one -= 1;
+    }
+
+}
+
+void GroceryCounter::decrement_tenths(){
+    if(tenth == 0){
+        tenth = 0;
+    }
+    else{
+    tenth -= 1;
+    }
+
+}
+
+void GroceryCounter::decrement_hundreths(){
+    if(hundreth == 0){
+        hundreth = 0;
+    }
+    else{
+    hundreth -= 1;
+    }
+
 }
 
 string GroceryCounter::total(){

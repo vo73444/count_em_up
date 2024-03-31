@@ -12,13 +12,17 @@ int main(){
     }
     cout << counter.total() << endl;
 
-    for(int j = 0; j < 9; j++){
-        counter.hundreths();
+    for(int j = 0; j < 10; j++){
+        counter.decrement_tenths();
     }
 
     cout << counter.total() << endl;
 
     counter.hundreths();
+
+    cout << counter.total() << endl;
+
+    counter.decrement_hundreths();
 
     cout << counter.total() << endl;
 
